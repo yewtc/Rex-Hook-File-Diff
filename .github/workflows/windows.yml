@@ -23,7 +23,7 @@ jobs:
       - name: perl -V
         run: perl -V
       - name: Fix git line endings
-        run: git config --global core.autocrlf false
+        run: git config --global core.autocrlf true
       - name: Install Dist::Zilla
         run: cpanm Dist::Zilla
       - name: Install author dependencies
